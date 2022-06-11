@@ -68,7 +68,8 @@ namespace MVC_EF_Start.Controllers
             dbContext.Quotes.Add(MyCompanyQuote1);
             dbContext.Quotes.Add(MyCompanyQuote2);
 
-            dbContext.SaveChanges();
+            /*await dbContext.SaveChangesAsync();*/
+            await dbContext.SaveChangesAsync();
 
             // READ operation
             Company CompanyRead1 = dbContext.Companies
